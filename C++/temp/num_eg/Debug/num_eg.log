@@ -1,0 +1,4 @@
+﻿  num_eg.cpp
+d:\opensource\c++\temp\num_eg\num_eg.cpp(25): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+d:\opensource\c++\temp\num_eg\num_eg.cpp(48): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+  num_eg.vcxproj -> D:\OpenSource\C++\temp\num_eg\Debug\num_eg.exe
