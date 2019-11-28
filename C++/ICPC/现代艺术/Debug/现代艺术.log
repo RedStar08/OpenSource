@@ -1,8 +1,0 @@
-﻿  现代艺术.cpp
-d:\sourcecode\c++\项目\大二\现代艺术\现代艺术.cpp(15): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
-d:\sourcecode\c++\项目\大二\现代艺术\现代艺术.cpp(19): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
-d:\sourcecode\c++\项目\大二\现代艺术\现代艺术.cpp(108): warning C4244: “+=”: 从“double”转换到“long”，可能丢失数据
-d:\sourcecode\c++\项目\大二\现代艺术\现代艺术.cpp(109): warning C4244: “+=”: 从“double”转换到“long”，可能丢失数据
-d:\sourcecode\c++\项目\大二\现代艺术\现代艺术.cpp(120): warning C4018: “<”: 有符号/无符号不匹配
-d:\sourcecode\c++\项目\大二\现代艺术\现代艺术.cpp(123): warning C4018: “<”: 有符号/无符号不匹配
-  现代艺术.vcxproj -> D:\SourceCode\C++\项目\大二\现代艺术\Debug\现代艺术.exe
