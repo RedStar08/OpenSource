@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "现代艺术", "现代艺术.vcxproj", "{A2ADECF0-E075-4079-8A1C-2915971AC355}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Debug|x64.ActiveCfg = Debug|x64
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Debug|x64.Build.0 = Debug|x64
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Debug|x86.ActiveCfg = Debug|Win32
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Debug|x86.Build.0 = Debug|Win32
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Release|x64.ActiveCfg = Release|x64
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Release|x64.Build.0 = Release|x64
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Release|x86.ActiveCfg = Release|Win32
+		{A2ADECF0-E075-4079-8A1C-2915971AC355}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BD6B444-88FD-4E49-8671-F23ABA500F9E}
+	EndGlobalSection
+EndGlobal
