@@ -55,7 +55,7 @@ void cou(int data[30], int count[20]) //统计区间频数
 	}
 	int i = 0;
 	while (data[i] > 0 && data[i] <= 100) { //统计
-		if (data[i] == 1) //属于区间（0,5]计数
+		if (data[i] < 5) //属于区间（0,5]计数
 			count[0]++;
 		else
 			count[(data[i] / 5) - 1]++;//属于区间( 5i, 5(i+1) ]计数
