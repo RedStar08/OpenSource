@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1580979203 source:d:\opensource\c++\compiler\ternary_code\main.cpp
+	<iostream>
+	<string>
+	<stdio.h>
+	<stdlib.h>
+
