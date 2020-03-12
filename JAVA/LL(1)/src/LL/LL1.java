@@ -1,4 +1,7 @@
+package LL;
+
 import java.util.*;
+import java.lang.String;
 
 public class LL1 extends Data{
 	
@@ -211,7 +214,7 @@ public class LL1 extends Data{
     //判断终结符
     boolean isVT(String X) {
     	for (int i = 0; i <= (VT.length - 1); i++) {
-            if (VT[i].equals(X)) {
+            if (VT[i].equals(X)&&X!="#") {
                 return true;
             }
         }
@@ -261,8 +264,9 @@ public class LL1 extends Data{
     //分析算法(核心，实现同步错误机制)
     void analyse() {
     	while(control) {
-    		getTop();//取栈顶
-    		if(isVT(X)) { //是终结符
+    		
+    		getTop(); //取栈顶
+    		if(isVT(X)) { //是终结符,不能是#
     			if(X.equals(a)) { //终结符匹配
     				location++;
     				a = getChar();
@@ -273,7 +277,7 @@ public class LL1 extends Data{
     		    	table_G[count][1] = stack.toString();
     		    	table_G[count][2] = input.substring(location, input.length());
     			}
-    			else { //栈顶终结符不匹配，弹出。
+    			else { //栈顶终结符不匹配,弹出。
     				stack.pop();
     				System.out.printf(X+"已弹出栈\n");
     				error();
@@ -294,8 +298,8 @@ public class LL1 extends Data{
     	    			a = getChar();
     				}
     				else {
-    				stack.pop();
-    				System.out.printf(X+"已弹出栈\n");
+    					stack.pop();
+    					System.out.printf(X+"已弹出栈\n");
     				}
     			}
     			else if(getLocation().equals("ε")) { // 空字可直接消去
@@ -316,6 +320,7 @@ public class LL1 extends Data{
     			a = getChar();
     		}
     	}
+    
     }
     
 //开始分析过程
@@ -324,7 +329,9 @@ public class LL1 extends Data{
     void initial(){
      	input+="#";
      	stack.push("#");
-     	System.out.println("步骤\t" + "分析栈\t" + "\t    剩余输入串\t" + "所用产生式 ");
+     	count = 0;
+     	location = 0;
+       	System.out.println("步骤\t" + "分析栈\t" + "\t    剩余输入串\t" + "所用产生式 ");
      	stack.push(VN[0]);//开始符进栈
         	getChar();
         	//打印开始信息
@@ -352,8 +359,7 @@ public class LL1 extends Data{
 	//主程序开始
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-	    @SuppressWarnings("unused")
-		WinTable win = new WinTable();
+	    new WinTable();
 	    
 	}
 	

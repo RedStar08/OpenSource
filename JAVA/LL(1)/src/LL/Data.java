@@ -1,3 +1,5 @@
+package LL;
+
 import java.util.*;
 
 public class Data {
@@ -45,7 +47,7 @@ public class Data {
     static String[][] first = new String [5][1];
     static String[][] follow = new String [5][1];
     static String[][] table_T = new String [5][9];
-    static String[][] table_G = new String [20][4];
+    static String[][] table_G = new String [50][4];
 	  
     public Data() { //构造函数绑定文法数据
     	

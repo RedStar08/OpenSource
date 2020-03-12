@@ -1,3 +1,5 @@
+package LL;
+
 import javax.swing.*;
 
 import java.awt.*;
@@ -96,7 +98,7 @@ class WinTable extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO 自动生成的方法存根
-		new LL1(new String(Data.input));
+		new LL1(str.getText());
 		
 		if(e.getSource()==item0) { //菜单0事件
 			First = Data.first; //更新FIRST数据
@@ -117,7 +119,7 @@ class WinTable extends JFrame implements ActionListener {
 		if(e.getSource()==button) { //按钮事件
 			str.getText();
 			Data.input = str.getText();
-			new LL1(new String(Data.input));
+			new LL1(str.getText());
 			a = Data.table_G; //更新分析表数据
 			Table.repaint();
 		
