@@ -1,0 +1,29 @@
+D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC.v {1 {vlog -work ch3_PC_RAM_work -vopt D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC_tb.v {1 {vlog -work ch3_PC_RAM_work -vopt D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module PC_tb
+
+Top level modules:
+	PC_tb
+
+} {} {}} D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM.v {1 {vlog -work ch3_PC_RAM_work -vopt D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM_tb.v {1 {vlog -work ch3_PC_RAM_work -vopt D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RAM_tb
+
+Top level modules:
+	RAM_tb
+
+} {} {}}

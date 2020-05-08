@@ -1,0 +1,190 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SourceCode\VerilogHDL\ch2_ALU
+T_opt
+VLn?kUdai^zO06UL:00aPe2
+04 3 4 work CPU fast 0
+=1-b06ebf0f66d4-5e0d90bd-a1-20f4
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z1 OE;O;10.1a;51
+Z2 dD:\SourceCode\VerilogHDL\ch2_ALU
+T_opt1
+Vo<PR>LIUl;M_cA^OZdcnL0
+04 6 4 work CPU_tb fast 0
+=1-b06ebf0f66d4-5e0e0202-37c-21b8
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt1
+R1
+vALU
+IL5SEhPjXkfWlY2SRSiBN10
+VVD6D5lVQIK1c37ao8jzai2
+Z3 dD:\SourceCode\VerilogHDL\ch4_CPU
+w1577976149
+8D:/SourceCode/VerilogHDL/ch4_CPU/ALU.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/ALU.v
+L0 1
+Z4 OE;L;10.1a;51
+r1
+31
+Z5 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@a@l@u
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/ALU.v|
+!s100 `Z@3D<[GNeDh_O<CkeeQB1
+!s108 1577976315.671000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/ALU.v|
+!i10b 1
+!s85 0
+vCPU
+IeiOC_[OH2:cK;hRjLgI3M3
+VEa5ASA_GBSaU3XfOkkHPX1
+R3
+w1577951401
+8D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/CPU.v
+L0 2
+R4
+r1
+31
+R5
+n@c@p@u
+!s100 JZmH7aZgK3XjGA0dYdeK51
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v|
+!s108 1577976316.002000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v|
+!i10b 1
+!s85 0
+vCPU_tb
+IbL0Jfb8fJJG>:XZX8UjDd0
+VJ]cozc2R4cz?MTJoP]UO70
+R3
+w1577976240
+8D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v
+L0 2
+R4
+r1
+31
+R5
+n@c@p@u_tb
+!s100 jY]efhPcg^=g1JMagP@o?0
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v|
+!s108 1577976316.312000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v|
+!i10b 1
+!s85 0
+vCU
+I2CB9D1A`H7o^[UQ4RUX020
+V<ONM:XbE?l3<S<dAL6IdZ1
+R3
+w1577976114
+8D:/SourceCode/VerilogHDL/ch4_CPU/CU.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/CU.v
+L0 2
+R4
+r1
+31
+R5
+n@c@u
+!s100 4ih<8[^8o1RnVH_@fN5<?0
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/CU.v|
+!s108 1577976315.830000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/CU.v|
+!i10b 1
+!s85 0
+vIns_mem
+IjMA4RRk4k`f[Y[S2`FQbL1
+VZ>R8AILCCPC`O1JO:4kRo1
+R3
+w1577975759
+8D:/SourceCode/VerilogHDL/ch4_CPU/Ins_mem.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/Ins_mem.v
+L0 2
+R4
+r1
+31
+R5
+n@ins_mem
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/Ins_mem.v|
+!s100 me9TP2F_Zclz6^o=<=H5i0
+!s108 1577976313.661000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/Ins_mem.v|
+!i10b 1
+!s85 0
+vmux2_1
+IEf?RX]U^9M9bT<XmY_DL81
+VD:Mc9XJNEP?_b_jY7:S5b2
+R3
+w1577976155
+8D:/SourceCode/VerilogHDL/ch4_CPU/mux2_1.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/mux2_1.v
+L0 2
+R4
+r1
+31
+R5
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/mux2_1.v|
+!i10b 1
+!s100 KN2HG4PDYld=0=MSY=Wfk0
+!s85 0
+!s108 1577976316.480000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/mux2_1.v|
+vPC
+Ia84N?3cI7P_0IGN3bYZ?51
+VH4110gCTA5;B3LR63Ljj02
+R3
+w1577975888
+8D:/SourceCode/VerilogHDL/ch4_CPU/PC.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/PC.v
+L0 1
+R4
+r1
+31
+R5
+n@p@c
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/PC.v|
+!s100 ?CAO6cK@]1DgmDzg:5VWS2
+!s108 1577976313.506000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/PC.v|
+!i10b 1
+!s85 0
+vRAM
+IWbfYo[:`L0^oJmP2MMKcg1
+V=CaA@ZcjUe0zJzd=XGH`C2
+R3
+w1577976096
+8D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/RAM.v
+L0 2
+R4
+r1
+31
+R5
+n@r@a@m
+!s100 FdVY9o[0FnN_^20XQ>JBa3
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v|
+!s108 1577976316.154000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v|
+!i10b 1
+!s85 0
+vRegFile
+IdgEhQOLWjXjCn6H1`MP5T1
+Vb5iW@k6iDR?U9HeeFAig>3
+R3
+w1577976315
+8D:/SourceCode/VerilogHDL/ch4_CPU/RegFile.v
+FD:/SourceCode/VerilogHDL/ch4_CPU/RegFile.v
+L0 2
+R4
+r1
+31
+R5
+n@reg@file
+!s100 [PW8dmHoe=iSEHTRgI]_^1
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch4_CPU/RegFile.v|
+!s108 1577976315.533000
+!s107 D:/SourceCode/VerilogHDL/ch4_CPU/RegFile.v|
+!i10b 1
+!s85 0

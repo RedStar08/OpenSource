@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+dD:\SourceCode\VerilogHDL\ch1_compare
+v_74LS138
+IG50Z_mDGmSUTeEiS0^zfN1
+Vk297^cMQ]P7D7BmJTjMcP3
+Z0 dD:\SourceCode\VerilogHDL\ch1_74LS138
+w1574317488
+8D:/SourceCode/VerilogHDL/ch1_74LS138/74LS138.v
+FD:/SourceCode/VerilogHDL/ch1_74LS138/74LS138.v
+L0 1
+Z1 OE;L;10.1a;51
+r1
+31
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@_74@l@s138
+!s100 3@bGH5kfIBf@kCZPzS3a92
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch1_74LS138/74LS138.v|
+!s108 1574317832.905000
+!s107 D:/SourceCode/VerilogHDL/ch1_74LS138/74LS138.v|
+!i10b 1
+!s85 0
+v_74LS138_tb
+Ilm_TNmMRWgGbZQFPRPQ5=1
+VhH:E:8Smlg[DZ2e9Io5K?0
+Z3 dD:\SourceCode\VerilogHDL\ch1_74LS138
+w1574317829
+8D:/SourceCode/VerilogHDL/ch1_74LS138/74LS138_tb.v
+FD:/SourceCode/VerilogHDL/ch1_74LS138/74LS138_tb.v
+L0 1
+R1
+r1
+31
+R2
+n@_74@l@s138_tb
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch1_74LS138/74LS138_tb.v|
+!i10b 1
+!s100 Q]NLT[7kof]CJN_Sd3o3=3
+!s85 0
+!s108 1574317833.033000
+!s107 D:/SourceCode/VerilogHDL/ch1_74LS138/74LS138_tb.v|
+T_opt
+VOKiRDokBVbGj0fhnE:VmX3
+04 11 4 work _74LS138_tb fast 0
+=1-b06ebf0f66d4-5dd62f10-1c0-40c8
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OE;O;10.1a;51

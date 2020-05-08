@@ -1,0 +1,21 @@
+Thu Nov 14 14:54:10 ?????? 2019
+Trace back: can't read "cmdListsWinData(0,List|Windows,state)": no such element in array
+    while executing
+"HTE::API::weakOpenFile [lindex $data 0]"
+    ("eval" body line 2)
+    invoked from within
+"eval $MIMEDropHandlers($type) "
+    ("copy" arm line 1)
+    invoked from within
+"switch -glob $action {
+      copy { eval $MIMEDropHandlers($type) }
+      move { eval $MIMEDropHandlers($type) }      
+   }"
+    (procedure "Drop" line 42)
+    invoked from within
+"Drop $tid copy $actions $type $win $X $Y $x $y $data"
+    (procedure "::HTE::Editor::DND::Win32Drop" line 26)
+    invoked from within
+"::HTE::Editor::DND::Win32Drop 0,0,u move copy text/uri-list .main_pane.source.interior.cs.body.editor.cs.panedWindow.f1.frame.paned.f0.frame.sw.tf.tex..."
+  <2: ::tkerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}
+  <1: ::bgerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}

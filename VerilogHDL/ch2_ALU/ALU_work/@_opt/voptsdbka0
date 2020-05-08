@@ -1,0 +1,104 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SourceCode\VerilogHDL\ch1_compare
+T_opt
+V_k40cZ23L@jNYSJbJTC5M3
+Z1 04 11 4 work Register_tb fast 0
+=1-b06ebf0f66d4-5de64ec4-3ab-3bf4
+o-quiet -auto_acc_if_foreign -work ALU_work +acc
+n@_opt
+Z2 OE;O;10.1a;51
+T_opt1
+VD;]@Qk07263=fHTCSm^OR0
+R1
+=1-b06ebf0f66d4-5dde4735-1bc-1814
+Z3 o-quiet -auto_acc_if_foreign -work ALU_work
+n@_opt1
+R2
+Z4 dD:\SourceCode\VerilogHDL\ch1_compare
+T_opt2
+VmKY1V^iL1jF^eF9^<b8G60
+04 8 4 work Register fast 0
+=1-b06ebf0f66d4-5dde31a1-dd-41b8
+R3
+n@_opt2
+R2
+R4
+vALU
+Io0Qd=eI6Qj_];5jYW]EC33
+Vja`0Z0i6FiJDP<M;ADi:k3
+Z5 dD:\SourceCode\VerilogHDL\ch2_ALU
+w1574319497
+8D:/SourceCode/VerilogHDL/ch2_ALU/ALU.v
+FD:/SourceCode/VerilogHDL/ch2_ALU/ALU.v
+L0 2
+Z6 OE;L;10.1a;51
+r1
+31
+Z7 o-work ALU_work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@a@l@u
+!s100 I38z[4d=ibE8SiEm]lRmG3
+!s90 -reportprogress|300|-work|ALU_work|-vopt|D:/SourceCode/VerilogHDL/ch2_ALU/ALU.v|
+!s108 1574902769.667000
+!s107 D:/SourceCode/VerilogHDL/ch2_ALU/ALU.v|
+!i10b 1
+!s85 0
+vALU_tb
+Ii;=`e1i2<146SHQBhOWfm0
+VE`_QLbcAmOeKZDFMXUl3B3
+R5
+w1574321548
+8D:/SourceCode/VerilogHDL/ch2_ALU/ALU_tb.v
+FD:/SourceCode/VerilogHDL/ch2_ALU/ALU_tb.v
+L0 1
+R6
+r1
+31
+R7
+n@a@l@u_tb
+!s100 8BzUZ?91DQ0i[GZ@[zR]O2
+!s90 -reportprogress|300|-work|ALU_work|-vopt|D:/SourceCode/VerilogHDL/ch2_ALU/ALU_tb.v|
+!i10b 1
+!s85 0
+!s108 1574902769.792000
+!s107 D:/SourceCode/VerilogHDL/ch2_ALU/ALU_tb.v|
+vRegister
+IM_gmYIeT3J@=Q3C_<BS_B2
+Vi_FEHjIJmoQ6>Lim3>Z3;1
+R5
+w1574900841
+8D:/SourceCode/VerilogHDL/ch2_ALU/Register.v
+FD:/SourceCode/VerilogHDL/ch2_ALU/Register.v
+L0 2
+R6
+r1
+31
+Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@register
+!i10b 1
+!s100 _3]R[bD6Zb3m`CGIOggcP0
+!s85 0
+!s108 1574902769.917000
+!s107 D:/SourceCode/VerilogHDL/ch2_ALU/Register.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch2_ALU/Register.v|
+vRegister_tb
+IHdNhT=`lHIZN;1<AGk^hK2
+VE5kjWJFB3GX<kD:MQn0^]2
+R5
+w1575374523
+8D:/SourceCode/VerilogHDL/ch2_ALU/Register_tb.v
+FD:/SourceCode/VerilogHDL/ch2_ALU/Register_tb.v
+L0 1
+R6
+r1
+31
+R8
+n@register_tb
+!i10b 1
+!s100 Nd8hgVMj7P[<fgE>U43i53
+!s85 0
+!s108 1575374528.082000
+!s107 D:/SourceCode/VerilogHDL/ch2_ALU/Register_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch2_ALU/Register_tb.v|

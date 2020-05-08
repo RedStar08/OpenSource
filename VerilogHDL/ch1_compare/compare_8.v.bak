@@ -1,0 +1,23 @@
+module compare_8(
+    input [7:0] a,
+    input [7:0] b,
+    output reg equ,
+    output reg m
+    );
+always@(a or b)
+if (a>b)
+	begin
+		equ = 0;
+		m = 1;
+	end
+else if(a<b)
+		begin 
+		equ = 0;
+		m = 0;
+	end
+else
+	begin
+		equ = 1;
+		m = 0;
+	end
+endmodule

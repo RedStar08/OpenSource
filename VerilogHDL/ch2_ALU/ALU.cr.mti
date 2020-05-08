@@ -1,0 +1,29 @@
+D:/SourceCode/VerilogHDL/ch2_ALU/Register.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch2_ALU/Register.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} D:/SourceCode/VerilogHDL/ch2_ALU/Register_tb.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch2_ALU/Register_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Register_tb
+
+Top level modules:
+	Register_tb
+
+} {} {}} D:/SourceCode/VerilogHDL/ch2_ALU/ALU.v {1 {vlog -work ALU_work -vopt D:/SourceCode/VerilogHDL/ch2_ALU/ALU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/SourceCode/VerilogHDL/ch2_ALU/ALU_tb.v {1 {vlog -work ALU_work -vopt D:/SourceCode/VerilogHDL/ch2_ALU/ALU_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ALU_tb
+
+Top level modules:
+	ALU_tb
+
+} {} {}}

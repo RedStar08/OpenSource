@@ -1,0 +1,15 @@
+D:/SourceCode/VerilogHDL/ch1_compare/compare_8tb.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch1_compare/compare_8tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module compare_8tb
+
+Top level modules:
+	compare_8tb
+
+} {} {}} D:/SourceCode/VerilogHDL/ch1_compare/compare_8.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch1_compare/compare_8.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module compare_8
+
+Top level modules:
+	compare_8
+
+} {} {}}

@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+dC:\Program Files (x86)\Modelsim\examples
+T_opt
+VZZU6?=^78YmBAQ4kh9z@L2
+04 8 4 work mux4_1tb fast 0
+=1-b06ebf0f66d4-5dccf398-36a-1590
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OE;O;10.1a;51
+vmux4_1
+!s100 G1[z?DI7l2zel_eIbb7EU2
+ImeaOTNnVLaTkKDjgUe8Gk3
+VjnI7SNIdHRGFhP<Rn_8i=0
+Z0 dD:\SourceCode\VerilogHDL\ch1_mux41
+w1573712125
+8D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v
+FD:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v
+L0 1
+Z1 OE;L;10.1a;51
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v|
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s108 1573712772.057000
+!s107 D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v|
+!i10b 1
+!s85 0
+vmux4_1tb
+!s100 ea91XQZR6D6GaUO>T^e[23
+I2;^EEe<1h@On8R1ozMEG`2
+VzNOezjze@;PF2^6MN;2>a3
+Z3 dD:\SourceCode\VerilogHDL\ch1_mux41
+w1573712707
+8D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v
+FD:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v
+L0 1
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v|
+R2
+!i10b 1
+!s85 0
+!s108 1573712772.500000
+!s107 D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v|

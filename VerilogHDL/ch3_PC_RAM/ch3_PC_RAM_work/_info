@@ -1,0 +1,104 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Program Files (x86)\Modelsim\examples
+T_opt
+V>317Coc5g@fgElV_JEBZN2
+Z1 04 6 4 work RAM_tb fast 0
+=1-b06ebf0f66d4-5de6728b-355-1acc
+o-quiet -auto_acc_if_foreign -work ch3_PC_RAM_work +acc
+n@_opt
+Z2 OE;O;10.1a;51
+Z3 dC:\Program Files (x86)\Modelsim\examples
+T_opt1
+V7]iFgMC]UR^b;ij7ZCG7V3
+R1
+=1-b06ebf0f66d4-5e0d50cc-8a-e24
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt1
+R2
+T_opt2
+Vg0m@ZEWTZYCBc]lAT>z3?1
+R1
+=1-b06ebf0f66d4-5de670bf-87-3274
+o-quiet -auto_acc_if_foreign -work ch3_PC_RAM_work
+n@_opt2
+R2
+R3
+vPC
+IJU^86Kd=aUd134fghKRVP1
+VH4110gCTA5;B3LR63Ljj02
+Z4 dD:\SourceCode\VerilogHDL\ch3_PC_RAM
+w1575381108
+8D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC.v
+FD:/SourceCode/VerilogHDL/ch3_PC_RAM/PC.v
+L0 2
+Z5 OE;L;10.1a;51
+r1
+31
+Z6 o-work ch3_PC_RAM_work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@p@c
+!s100 9z<hlP5_Lc=`mhD8_Im=U3
+!s90 -reportprogress|300|-work|ch3_PC_RAM_work|-vopt|D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC.v|
+!s108 1575383685.943000
+!s107 D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC.v|
+!i10b 1
+!s85 0
+vPC_tb
+I5m]J36jOnJ=M<=gB9?g5<0
+VFCCkYk:f8eGJm;I:69VF<3
+R4
+w1575383124
+8D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC_tb.v
+FD:/SourceCode/VerilogHDL/ch3_PC_RAM/PC_tb.v
+L0 1
+R5
+r1
+31
+R6
+n@p@c_tb
+!s100 Wgn0j_e4gRjCXU0ifS<_G2
+!s90 -reportprogress|300|-work|ch3_PC_RAM_work|-vopt|D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC_tb.v|
+!s108 1575383686.086000
+!s107 D:/SourceCode/VerilogHDL/ch3_PC_RAM/PC_tb.v|
+!i10b 1
+!s85 0
+vRAM
+I7gSkn=GQzk3E91z6R51I61
+V[ASM[[CRZA?;2]UG1de_z3
+R4
+w1575383674
+8D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM.v
+FD:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM.v
+L0 2
+R5
+r1
+31
+R6
+n@r@a@m
+!s90 -reportprogress|300|-work|ch3_PC_RAM_work|-vopt|D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM.v|
+!s100 Dke:6[JY2M^1ZOh^B;R`c1
+!s108 1575383686.211000
+!s107 D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM.v|
+!i10b 1
+!s85 0
+vRAM_tb
+IElogFiePNDWbGlUYjMSjP0
+VXj`92CT[<F^RPYbHUZ<6[1
+R4
+w1575383490
+8D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM_tb.v
+FD:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM_tb.v
+L0 1
+R5
+r1
+31
+R6
+n@r@a@m_tb
+!s100 =jTcP07TUGQ=3`QclHeQh0
+!s90 -reportprogress|300|-work|ch3_PC_RAM_work|-vopt|D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM_tb.v|
+!i10b 1
+!s85 0
+!s108 1575383686.332000
+!s107 D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM_tb.v|

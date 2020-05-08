@@ -1,0 +1,37 @@
+`timescale 1 ns/ 1 ns
+module compare_8tb();
+reg eachvec;
+reg [7:0] a;
+reg [7:0] b;                                             
+wire equal;
+                      
+compare_8 i1(
+ 
+	.a(a),
+	.b(b),
+	.equal(equal)
+);
+initial                                                
+begin                                                  
+	$display("Running testbench"); 
+	
+	a = 8'b0000_0000;
+	b = 8'b0000_0000;
+	
+	#100 a = 8'b0011_1100;
+	#100 b = 8'b0101_1010;
+	
+	#100 a = 8'b1011_1100;
+	#100 b = 8'b0101_1010;
+	
+	#100 $stop;
+                      
+end                                                    
+always                                                 
+              
+begin                                                  
+                                                    
+@eachvec;                                              
+                                            
+end                                                    
+endmodule

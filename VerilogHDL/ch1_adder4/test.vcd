@@ -1,0 +1,117 @@
+$date
+	Thu Nov 14 15:20:37 2019
+$end
+$version
+	ModelSim Version 10.1a
+$end
+$timescale
+	1ns
+$end
+$scope module adder4_tb $end
+$var wire 1 ! sum [3] $end
+$var wire 1 " sum [2] $end
+$var wire 1 # sum [1] $end
+$var wire 1 $ sum [0] $end
+$var wire 1 % cout $end
+$var reg 4 & ina [3:0] $end
+$var reg 4 ' inb [3:0] $end
+$var reg 1 ( cin $end
+$scope module adder4_1 $end
+$var wire 1 ! sum [3] $end
+$var wire 1 " sum [2] $end
+$var wire 1 # sum [1] $end
+$var wire 1 $ sum [0] $end
+$var wire 1 % cout $end
+$var wire 1 ) ina [3] $end
+$var wire 1 * ina [2] $end
+$var wire 1 + ina [1] $end
+$var wire 1 , ina [0] $end
+$var wire 1 - inb [3] $end
+$var wire 1 . inb [2] $end
+$var wire 1 / inb [1] $end
+$var wire 1 0 inb [0] $end
+$var wire 1 1 cin $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 &
+b1010 '
+0(
+1$
+1#
+0"
+1!
+0%
+01
+00
+1/
+0.
+1-
+1,
+0+
+0*
+0)
+$end
+#5
+b10 &
+1(
+0,
+1+
+11
+0#
+1"
+#10
+b1110 '
+0(
+1.
+01
+0$
+0"
+0!
+1%
+#15
+b11 &
+b1100 '
+1(
+0/
+1,
+11
+#20
+b111 &
+b1001 '
+0(
+10
+0.
+1*
+01
+#25
+b1 &
+b1100 '
+1(
+00
+1.
+0+
+0*
+11
+1#
+1"
+1!
+0%
+#30
+b11 &
+0(
+1+
+01
+1$
+#35
+b111 &
+b1111 '
+1(
+10
+1/
+1*
+11
+0!
+1%

@@ -1,0 +1,218 @@
+//PC
+module PC(
+  input wire clk, reset,
+  output reg [7:0] pc
+);
+
+  always@(posedge clk) begin  //clk上降沿,pc自动加1
+  
+    if(reset == 1)
+       pc = 0;
+    else
+       pc = pc + 1;
+    
+  end
+  
+endmodule
+
+//Ins_mem(256W = 512B)
+module Ins_mem(
+  input wire [7:0] Addr,  //地址8位，256W
+  output reg [15:0] Ins //指令长度16位
+);
+ 
+  reg [15:0] mem[255:0]; //256个存储单元，字寻址
+  
+  initial begin //初始化Ins_mem，存放5条加法指令,opcode = 0000000: add
+      mem[0] = 16'o000012;   //add r0, r1, r2
+      mem[1] = 16'o000234;   //add r2, r3, r4
+      mem[2] = 16'o000456;   //add r4, r5, r6
+      mem[3] = 16'o000670;   //add r6, r7, r0
+      mem[4] = 16'o000001;   //add r0, r0, r1
+      mem[5] = 16'o000011;   //add r0, r1, r1
+      mem[6] = 16'o000122;   //add r1, r2, r2
+      mem[7] = 16'o000234;   //add r2, r3, r4
+      mem[8] = 16'o000455;   //add r4, r5, r5
+      mem[9] = 16'o000567;   //add r5, r6, r7
+  end
+  
+  always@* begin
+    Ins = mem[Addr];
+  end
+  
+endmodule
+
+//RegFile,8个register
+module RegFile(
+  input wire WE, clk,
+  input wire [2:0] R_port0, R_port1, W_port,  //2个读端口，写端口
+  input wire [15:0] W_data, //写入的数据
+  output reg [15:0] R_reg0, R_reg1  //读出的数据
+);
+  
+  reg [15:0] regfile[0:7];  //8个register
+  
+  integer i;
+  initial begin //初始化8个reg，分别为0 - 70
+    for(i = 0; i < 8; i = i + 1) begin
+      regfile[i] = 10*i;
+    end
+  end
+  
+  always@* begin    //read
+    R_reg0 = regfile[R_port0];
+    R_reg1 = regfile[R_port1];
+  end
+  
+  always@(negedge clk) begin  //write,clk下降沿，写入
+      if(WE == 1)
+        regfile[W_port] <= W_data;
+  end
+  
+endmodule
+
+//RAM (1KB = 512WB)
+module RAM(
+  input wire clk, WE,
+  input wire [15:0] in,
+  input wire [8:0] addr,
+  output reg [15:0] out
+);
+  
+  reg [15:0] regfile[511:0];
+  
+  always@* begin
+    if(WE == 1)
+      out = regfile[addr];
+  end
+  
+  always@(posedge clk) begin
+    if(WE == 0)
+      regfile[addr] <= in;
+  end
+  
+endmodule
+
+//ALU
+module ALU(
+  input wire [15:0] in0, in1,
+  input wire [2:0] alu_op,	//最多8种操作
+  output reg [15:0] Z
+);
+
+  always@* begin
+    case(alu_op)
+      3'b000: Z = in0 + in1;
+      3'b001: Z = in0 - in1;
+      3'b010: Z = in0 && in1;
+      3'b011: Z = in0 || in1;
+      3'b100: Z = in0 << in1;
+      3'b101: Z = in0 >> in1;
+    endcase
+  end 
+  
+endmodule
+
+//CU
+module CU(
+  input wire [6:0] Ins_op,//Opcoed
+  output reg wr_en,
+  output reg [2:0] alu_op
+);
+ 
+  always@* begin
+    if(Ins_op == 0)	//Opcoed = 0, 加法操作
+      wr_en = 1;
+      alu_op = 3'b000;
+  end
+
+endmodule
+
+//CPU
+module CPU(
+  input wire clk, reset
+);
+ 
+  wire WR;	//写使能
+  wire [2:0] operate;	//操作
+  wire [7:0] Addr;	//地址，pc
+  wire [15:0] Z, Ins, r1, r2;	//Z为结果, Ins为指令, r1,r2为操作数
+  
+  PC pc(	//pc与Addr相连
+    .clk(clk), .reset(reset), .pc(Addr)
+  );
+  
+  Ins_mem mem(	//地址，指令相连
+    .Addr(Addr), .Ins(Ins)
+  );
+  
+  CU cu(	//写使能，Ins的Opcode部分连线，alu_op和操作连线
+    .wr_en(WR), .Ins_op(Ins[15:9]), .alu_op(operate)
+  );
+  
+  RegFile regfile(	//指令的三个地址连线，数据端口连线
+    .clk(clk), .WE(wr_en), 
+    .R_port0(Ins[8:6]), .R_port1(Ins[5:3]), .W_port(Ins[2:0]),
+    .W_data(Z), .R_reg0(r1), .R_reg1(r2)
+  );
+  
+  ALU alu(	//操作，操作数，结果连线
+    .in0(r1), .in1(r2), .alu_op(operate), .Z(Z)
+  );
+  
+endmodule
+
+//CPU_tb
+module CPU_tb;
+   //CPU
+  reg clk, reset;
+  wire WR;
+  wire [2:0] operate;
+  wire [7:0] Addr;
+  wire [15:0] Ins, r1, r2, Z;
+
+
+  always #5 clk = ~clk;	//T = 10ns
+    
+  initial begin
+    clk = 1;
+    reset = 1;
+    
+    #10 reset = 0;
+    
+    #100 $stop;
+  end
+
+  CPU cpu(	//CPU
+    .clk(clk), .reset(reset)
+  );
+  PC pc(	//pc与Addr相连
+    .clk(clk), .reset(reset), .pc(Addr)
+  );
+  
+  Ins_mem mem(	//地址，指令相连
+    .Addr(Addr), .Ins(Ins)
+  );
+  
+  CU cu(	//写使能，Ins的Opcode部分连线，alu_op和操作连线
+    .wr_en(WR), .Ins_op(Ins[15:9]), .alu_op(operate)
+  );
+  
+  RegFile regfile(	//指令的三个地址连线，数据端口连线
+    .clk(clk), .WE(WR), 
+    .R_port0(Ins[8:6]), .R_port1(Ins[5:3]), .W_port(Ins[2:0]),
+    .W_data(Z), .R_reg0(r1), .R_reg1(r2)
+  );
+  
+  ALU alu(	//操作，操作数，结果连线
+    .in0(r1), .in1(r2), .alu_op(operate), .Z(Z)
+  );
+
+endmodule
+
+
+
+
+
+
+

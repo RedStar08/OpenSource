@@ -1,0 +1,54 @@
+vsim -voptargs=+acc work.adder4_tb
+# vsim -voptargs=+acc work.adder4_tb 
+# Loading work.adder4_tb(fast)
+# Loading work.adder4(fast)
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+add wave  \
+sim:/adder4_tb/sum \
+sim:/adder4_tb/cout \
+sim:/adder4_tb/ina \
+sim:/adder4_tb/inb \
+sim:/adder4_tb/cin
+run -all
+# At time                    0, ina(0001) + inb(1010) + cin(0) =  sum(1011)(11),cout(0)
+# At time                    5, ina(0010) + inb(1010) + cin(1) =  sum(1101)(13),cout(0)
+# At time                   10, ina(0010) + inb(1110) + cin(0) =  sum(0000)( 0),cout(1)
+# At time                   15, ina(0011) + inb(1100) + cin(1) =  sum(0000)( 0),cout(1)
+# At time                   20, ina(0111) + inb(1001) + cin(0) =  sum(0000)( 0),cout(1)
+# At time                   25, ina(0001) + inb(1100) + cin(1) =  sum(1110)(14),cout(0)
+# At time                   30, ina(0011) + inb(1100) + cin(0) =  sum(1111)(15),cout(0)
+# At time                   35, ina(0111) + inb(1111) + cin(1) =  sum(0111)( 7),cout(1)
+# ** Note: $finish    : D:/SourceCode/VerilogHDL/ch1_adder4/adder4_tb.v(25)
+#    Time: 40 ns  Iteration: 0  Instance: /adder4_tb
+# 1
+# Break in Module adder4_tb at D:/SourceCode/VerilogHDL/ch1_adder4/adder4_tb.v line 25
+quit -sim
+# Compile of adder4.v was successful.
+# Compile of adder4_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.adder4_tb
+# vsim -voptargs=+acc work.adder4_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.adder4_tb(fast)
+# Loading work.adder4(fast)
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+add wave  \
+sim:/adder4_tb/sum \
+sim:/adder4_tb/cout \
+sim:/adder4_tb/ina \
+sim:/adder4_tb/inb \
+sim:/adder4_tb/cin
+run -all
+# At time                    0, ina(0001) + inb(1010) + cin(0) =  sum(1011)(11),cout(0)
+# At time                    5, ina(0010) + inb(1010) + cin(1) =  sum(1101)(13),cout(0)
+# At time                   10, ina(0010) + inb(1110) + cin(0) =  sum(0000)( 0),cout(1)
+# At time                   15, ina(0011) + inb(1100) + cin(1) =  sum(0000)( 0),cout(1)
+# At time                   20, ina(0111) + inb(1001) + cin(0) =  sum(0000)( 0),cout(1)
+# At time                   25, ina(0001) + inb(1100) + cin(1) =  sum(1110)(14),cout(0)
+# At time                   30, ina(0011) + inb(1100) + cin(0) =  sum(1111)(15),cout(0)
+# At time                   35, ina(0111) + inb(1111) + cin(1) =  sum(0111)( 7),cout(1)
+# Break in Module adder4_tb at D:/SourceCode/VerilogHDL/ch1_adder4/adder4_tb.v line 20
+quit -sim

@@ -1,0 +1,18 @@
+vsim -voptargs=+acc work.RAM_tb
+# vsim -voptargs=+acc work.RAM_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.RAM_tb(fast)
+# Loading work.RAM(fast)
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+add wave  \
+sim:/RAM_tb/clk \
+sim:/RAM_tb/WE \
+sim:/RAM_tb/in \
+sim:/RAM_tb/addr \
+sim:/RAM_tb/out
+run
+# Break in Module RAM_tb at D:/SourceCode/VerilogHDL/ch3_PC_RAM/RAM_tb.v line 29
+quit -sim
+cd D:/SourceCode/VerilogHDL/ch2_ALU

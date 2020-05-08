@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Program Files (x86)\Modelsim\examples
+T_opt
+Z1 VZZU6?=^78YmBAQ4kh9z@L2
+Z2 04 8 4 work mux4_1tb fast 0
+Z3 =1-b06ebf0f66d4-5dccf398-36a-1590
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;10.1a;51
+Z7 dC:\Program Files (x86)\Modelsim\examples
+vadder_4
+Z8 !s100 j1o6?_ROo=o1dZBnGiLz63
+Z9 ICiT36HQVLb:D:o0hI8Q5A2
+Z10 VKQjo9O1`8N4:?UoLX]0f@0
+Z11 dD:\SourceCode\VerilogHDL\ch1_mux41
+Z12 w1573714589
+Z13 8D:\SourceCode\VerilogHDL\ch1_mux41\adder_4.v
+Z14 FD:\SourceCode\VerilogHDL\ch1_mux41\adder_4.v
+L0 1
+Z15 OE;L;10.1a;51
+r1
+31
+Z16 !s90 -reportprogress|300|-work|work|-vopt|D:\SourceCode\VerilogHDL\ch1_mux41\adder_4.v|
+Z17 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s85 0
+Z18 !s108 1573715218.357000
+Z19 !s107 D:\SourceCode\VerilogHDL\ch1_mux41\adder_4.v|
+vadder_4tb
+!i10b 1
+Z20 !s100 Q<TcEEno21U76B3m2KaEZ0
+Z21 Ij]aB^boAD;OUHEWe;5OIX2
+Z22 VhcQVz@iz1C[6Yb6g4X2Hn1
+R11
+Z23 w1573715147
+Z24 8D:\SourceCode\VerilogHDL\ch1_mux41\adder_4tb.v
+Z25 FD:\SourceCode\VerilogHDL\ch1_mux41\adder_4tb.v
+L0 1
+R15
+r1
+!s85 0
+31
+!s108 1573715218.549000
+!s107 D:\SourceCode\VerilogHDL\ch1_mux41\adder_4tb.v|
+Z26 !s90 -reportprogress|300|-work|work|-vopt|D:\SourceCode\VerilogHDL\ch1_mux41\adder_4tb.v|
+R17
+vmux4_1
+Z27 ImeaOTNnVLaTkKDjgUe8Gk3
+Z28 VjnI7SNIdHRGFhP<Rn_8i=0
+R11
+Z29 w1573712125
+Z30 8D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v
+Z31 FD:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v
+L0 1
+R15
+r1
+31
+R17
+Z32 !s100 G1[z?DI7l2zel_eIbb7EU2
+Z33 !s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v|
+Z34 !s108 1573712772.057000
+Z35 !s107 D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1.v|
+!i10b 1
+!s85 0
+vmux4_1tb
+Z36 I2;^EEe<1h@On8R1ozMEG`2
+Z37 VzNOezjze@;PF2^6MN;2>a3
+R11
+Z38 w1573712707
+Z39 8D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v
+Z40 FD:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v
+L0 1
+R15
+r1
+31
+R17
+Z41 !s100 ea91XQZR6D6GaUO>T^e[23
+Z42 !s90 -reportprogress|300|-work|work|-vopt|D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v|
+Z43 !s108 1573712772.500000
+Z44 !s107 D:/SourceCode/VerilogHDL/ch1_mux41/mux4_1tb.v|
+!i10b 1
+!s85 0

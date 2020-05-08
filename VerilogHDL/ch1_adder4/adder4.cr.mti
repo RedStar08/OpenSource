@@ -1,0 +1,15 @@
+D:/SourceCode/VerilogHDL/ch1_adder4/adder4.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch1_adder4/adder4.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module adder4
+
+Top level modules:
+	adder4
+
+} {} {}} D:/SourceCode/VerilogHDL/ch1_adder4/adder4_tb.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch1_adder4/adder4_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module adder4_tb
+
+Top level modules:
+	adder4_tb
+
+} {} {}}

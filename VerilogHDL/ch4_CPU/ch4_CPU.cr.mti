@@ -1,0 +1,64 @@
+D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/mux2_1.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/mux2_1.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/CU.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/CU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module CU
+
+Top level modules:
+	CU
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/Ins_mem.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/Ins_mem.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Ins_mem
+
+Top level modules:
+	Ins_mem
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module CPU_tb
+
+Top level modules:
+	CPU_tb
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/ALU.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/ALU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/RegFile.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/RegFile.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} D:/SourceCode/VerilogHDL/ch4_CPU/PC.v {1 {vlog -work work -vopt D:/SourceCode/VerilogHDL/ch4_CPU/PC.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}}

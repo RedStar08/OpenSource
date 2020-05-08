@@ -1,0 +1,211 @@
+vsim -voptargs=+acc work.CPU_tb
+# vsim -voptargs=+acc work.CPU_tb 
+# Loading work.CPU_tb(fast)
+# Loading work.CPU(fast)
+# Loading work.PC(fast)
+# Loading work.Ins_mem(fast)
+# Loading work.CU(fast)
+# Loading work.RegFile(fast)
+# Loading work.ALU(fast)
+# Loading work.mux2_1(fast)
+# Loading work.RAM(fast)
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): [PCDPC] - Port size (4 or 4) does not match connection size (7) for port 'Ins_op'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/CU.v(3).
+# 
+#         Region: /CPU_tb/cpu/cu
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v(47): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/mux2_1.v(3).
+# 
+#         Region: /CPU_tb/mux_add
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+add wave  \
+sim:/CPU_tb/clk \
+sim:/CPU_tb/reset \
+sim:/CPU_tb/WR \
+sim:/CPU_tb/m_WR \
+sim:/CPU_tb/select0 \
+sim:/CPU_tb/select1 \
+sim:/CPU_tb/operate \
+sim:/CPU_tb/Addr \
+sim:/CPU_tb/Ins \
+sim:/CPU_tb/r1 \
+sim:/CPU_tb/r2 \
+sim:/CPU_tb/Z \
+sim:/CPU_tb/out0 \
+sim:/CPU_tb/out1 \
+sim:/CPU_tb/ram_data \
+sim:/CPU_tb/imm
+run
+# Causality operation skipped due to absense of debug database file
+quit -sim
+# Compile of CPU_tb.v was successful.
+vsim -voptargs=+acc work.CPU_tb
+# vsim -voptargs=+acc work.CPU_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.CPU_tb(fast)
+# Loading work.CPU(fast)
+# Loading work.PC(fast)
+# Loading work.Ins_mem(fast)
+# Loading work.CU(fast)
+# Loading work.RegFile(fast)
+# Loading work.ALU(fast)
+# Loading work.mux2_1(fast)
+# Loading work.RAM(fast)
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): [PCDPC] - Port size (4 or 4) does not match connection size (7) for port 'Ins_op'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/CU.v(3).
+# 
+#         Region: /CPU_tb/cpu/cu
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v(57): [PCDPC] - Port size (9 or 9) does not match connection size (16) for port 'Addr'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v(4).
+# 
+#         Region: /CPU_tb/ram
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+add wave  \
+sim:/CPU_tb/clk \
+sim:/CPU_tb/reset \
+sim:/CPU_tb/WR \
+sim:/CPU_tb/m_WR \
+sim:/CPU_tb/select0 \
+sim:/CPU_tb/select1 \
+sim:/CPU_tb/operate \
+sim:/CPU_tb/Addr \
+sim:/CPU_tb/Ins \
+sim:/CPU_tb/r1 \
+sim:/CPU_tb/r2 \
+sim:/CPU_tb/Z \
+sim:/CPU_tb/out0 \
+sim:/CPU_tb/out1 \
+sim:/CPU_tb/ram_data \
+sim:/CPU_tb/imm
+run
+quit -sim
+# Compile of Ins_mem.v was successful.
+vsim -voptargs=+acc work.CPU_tb
+# vsim -voptargs=+acc work.CPU_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.CPU_tb(fast)
+# Loading work.CPU(fast)
+# Loading work.PC(fast)
+# Loading work.Ins_mem(fast)
+# Loading work.CU(fast)
+# Loading work.RegFile(fast)
+# Loading work.ALU(fast)
+# Loading work.mux2_1(fast)
+# Loading work.RAM(fast)
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): [PCDPC] - Port size (4 or 4) does not match connection size (7) for port 'Ins_op'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/CU.v(3).
+# 
+#         Region: /CPU_tb/cpu/cu
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v(57): [PCDPC] - Port size (9 or 9) does not match connection size (16) for port 'Addr'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v(4).
+# 
+#         Region: /CPU_tb/ram
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+add wave  \
+sim:/CPU_tb/clk \
+sim:/CPU_tb/reset \
+sim:/CPU_tb/WR \
+sim:/CPU_tb/m_WR \
+sim:/CPU_tb/select0 \
+sim:/CPU_tb/select1 \
+sim:/CPU_tb/operate \
+sim:/CPU_tb/Addr \
+sim:/CPU_tb/Ins \
+sim:/CPU_tb/r1 \
+sim:/CPU_tb/r2 \
+sim:/CPU_tb/Z \
+sim:/CPU_tb/out0 \
+sim:/CPU_tb/out1 \
+sim:/CPU_tb/ram_data \
+sim:/CPU_tb/imm
+run
+quit -sim
+vsim -voptargs=+acc work.CPU_tb
+# vsim -voptargs=+acc work.CPU_tb 
+# Loading work.CPU_tb(fast)
+# Loading work.CPU(fast)
+# Loading work.PC(fast)
+# Loading work.Ins_mem(fast)
+# Loading work.CU(fast)
+# Loading work.RegFile(fast)
+# Loading work.ALU(fast)
+# Loading work.mux2_1(fast)
+# Loading work.RAM(fast)
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): [PCDPC] - Port size (4 or 4) does not match connection size (7) for port 'Ins_op'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/CU.v(3).
+# 
+#         Region: /CPU_tb/cpu/cu
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v(57): [PCDPC] - Port size (9 or 9) does not match connection size (16) for port 'Addr'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v(4).
+# 
+#         Region: /CPU_tb/ram
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+quit -sim
+# Compile of PC.v was successful.
+# Compile of Ins_mem.v was successful.
+# Compile of RegFile.v was successful.
+# Compile of ALU.v was successful.
+# Compile of CU.v was successful.
+# Compile of CPU.v was successful.
+# Compile of RAM.v was successful.
+# Compile of CPU_tb.v was successful.
+# Compile of mux2_1.v was successful.
+# 9 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.CPU_tb
+# vsim -voptargs=+acc work.CPU_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.CPU_tb(fast)
+# Loading work.CPU(fast)
+# Loading work.PC(fast)
+# Loading work.Ins_mem(fast)
+# Loading work.CU(fast)
+# Loading work.RegFile(fast)
+# Loading work.ALU(fast)
+# Loading work.mux2_1(fast)
+# Loading work.RAM(fast)
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): [PCDPC] - Port size (4 or 4) does not match connection size (7) for port 'Ins_op'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/CU.v(3).
+# 
+#         Region: /CPU_tb/cpu/cu
+# ** Warning: (vsim-3015) D:/SourceCode/VerilogHDL/ch4_CPU/CPU_tb.v(57): [PCDPC] - Port size (9 or 9) does not match connection size (16) for port 'Addr'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/RAM.v(4).
+# 
+#         Region: /CPU_tb/ram
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+add wave  \
+sim:/CPU_tb/clk \
+sim:/CPU_tb/reset \
+sim:/CPU_tb/WR \
+sim:/CPU_tb/m_WR \
+sim:/CPU_tb/select0 \
+sim:/CPU_tb/select1 \
+sim:/CPU_tb/operate \
+sim:/CPU_tb/Addr \
+sim:/CPU_tb/Ins \
+sim:/CPU_tb/r1 \
+sim:/CPU_tb/r2 \
+sim:/CPU_tb/Z \
+sim:/CPU_tb/out0 \
+sim:/CPU_tb/out1 \
+sim:/CPU_tb/ram_data \
+sim:/CPU_tb/imm
+run
+quit -sim
+vsim work.CPU
+# vsim work.CPU 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): (vopt-2241) Connection width does not match width of port 'Ins_op'. The port definition is at: D:/SourceCode/VerilogHDL/ch4_CPU/CU.v(3).
+# 
+# ** Warning: D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): (vopt-2685) [TFMPC] - Too few port connections for 'cu'.  Expected 6, found 3.
+# 
+# ** Warning: D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'select1'.
+# 
+# ** Warning: D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'select0'.
+# 
+# ** Warning: D:/SourceCode/VerilogHDL/ch4_CPU/CPU.v(21): (vopt-2718) [TFMPC] - Missing connection for port 'm_wr_en'.
+# 
+# Loading work.CPU(fast)
+# ** Error: (vsim-3193) Load of "C:\Program Files (x86)\Modelsim\win32\imagehlp.dll" failed: File not found.
+# 
+quit -sim
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v was successful.
