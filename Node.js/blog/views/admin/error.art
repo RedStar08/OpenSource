@@ -1,0 +1,15 @@
+{{extend './common/layout.art'}}
+
+<!-- 填充错误提示 -->
+{{block 'main'}}
+<p class="bg-danger error">{{msg}}</p>
+{{/block}}
+
+<!-- 页面跳转 -->
+{{block 'script'}}
+<script type="text/javascript">
+    setTimeout(function() {
+        location.href = '/admin/login';
+    }, 3000);
+</script>
+{{/block}}

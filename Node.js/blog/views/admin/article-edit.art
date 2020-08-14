@@ -1,0 +1,97 @@
+<!-- 模板骨架继承 -->
+{{extend './common/layout.art'}}
+
+<!-- 填充骨架 -->
+{{block 'main'}}
+<!-- 头部 -->
+{{include './common/header.art'}}
+<!-- /头部 -->
+<!-- 主体内容 -->
+<div class="content">
+    <!-- 侧边栏 -->
+    {{include './common/left-aside.art'}}
+    <!-- 侧边栏 -->
+    <div class="main">
+        <!-- 分类标题 -->
+        <div class="title">
+            {{if articleInfo}}
+            <h4>{{@ articleInfo._id}}</h4>
+            {{/if}}
+        </div>
+        <!-- /分类标题 -->
+        <form class="form-container" action="{{link}}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>标题</label>
+                <input type="text" class="form-control" placeholder="请输入文章标题" name="tittle" value="{{articleInfo && articleInfo.tittle}}">
+            </div>
+            <div class="form-group">
+                <label>作者</label>
+                <input type="text" class="form-control" readonly name="author" value="{{@userInfo._id}}">
+            </div>
+            <div class="form-group">
+                <label>发布时间</label>
+                <input type="date" class="form-control" name="publishDate" value="{{articleInfo && dateformat(articleInfo.publishDate,'yyyy-mm-dd')}}">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputFile">文章封面</label>
+                <!-- mutipile允许选择多个文件 -->
+                <input type="file" name="cover" id="cover">
+                <div class="thumbnail-waper">
+                    <img class="img-thumbnail" src="{{ (articleInfo && articleInfo.cover)}}" id="coverImg">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>内容</label>
+                <textarea class="form-control" id="editor" name="content">{{ articleInfo && articleInfo.content}}</textarea>
+            </div>
+            <div class="buttons">
+                <input type="submit" class="btn btn-primary" value="{{submit}}">
+            </div>
+        </form>
+
+    </div>
+</div>
+{{/block}}
+
+<!-- 填充标签 -->
+{{block 'script'}}
+<!-- /主体内容 -->
+<script src="/admin/lib/ckeditor5/ckeditor.js"></script>
+<script type="text/javascript">
+    let editor;
+
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(newEditor => {
+            editor = newEditor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+    // 获取数据
+    // const editorData = editor.getData();
+
+    // 获取用户上传的文件的控件
+    let file = document.querySelector('#cover');
+    let coverImg = document.querySelector('#coverImg');
+    // 用户选择完文件之后
+    file.onchange = function() {
+        // 1.创建文件获取对象
+        let reader = new FileReader();
+        // 用户选择的文件列表，在file控件的files属性中
+        // console.log(file.files);
+        // 2.读取文件
+        reader.readAsDataURL(this.files[0]);
+        // 由于reader.readAsDataURL是一个异步API，我们需要监听是否读取完毕
+        reader.onload = function() {
+            // this.result得到图片的编码，直接赋值给img标签的src属性即可
+            // console.log(this.result);
+            coverImg.src = this.result;
+        };
+    };
+
+    //
+</script>
+{{/block}}
